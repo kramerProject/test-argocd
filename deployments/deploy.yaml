@@ -13,6 +13,13 @@ spec:
         app: myapp
     spec:
       containers:
+      - args:
+        - --concurrency
+        - "10"
+        - --proxyloaders
+        - oxylabsBR
+        - --captcha-solvers
+        - anticaptcha
       - name: myapp
         image: kramerscs/mycoins:2.0.0
         resources:
