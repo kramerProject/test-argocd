@@ -20,7 +20,7 @@ spec:
         - oxylabsBR
         - --captcha-solvers
         - anticaptcha
-      - name: myapp
+        name: myapp
         image: kramerscs/mycoins:2.0.0
         resources:
           limits:
